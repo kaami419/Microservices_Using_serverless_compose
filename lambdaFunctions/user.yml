@@ -1,0 +1,10 @@
+createUser:
+  handler: handler.createUser.createUserHandler
+  events:
+    - http:
+        path: user
+        method: POST
+        cors: true
+        # authorizer:
+        #   name: Authorizer
+        #   type: request

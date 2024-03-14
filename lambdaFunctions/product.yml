@@ -1,0 +1,7 @@
+createProduct:
+  handler: handler.createProduct.createProductHandler
+  events:
+    - http:
+        path: product
+        method: POST
+        cors: true

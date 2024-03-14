@@ -1,0 +1,10 @@
+services:
+  user:
+    component: ./lambdaFunctions
+    inputs:
+      - name: user.yml
+
+  product:
+    component: ./lambdaFunctions
+    inputs:
+      - name: product.yml
